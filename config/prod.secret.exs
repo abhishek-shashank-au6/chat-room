@@ -23,7 +23,7 @@ config :chat, ChatWeb.Endpoint,
     port: String.to_integer(System.get_env("PORT") || "4000"),
     transport_options: [socket_opts: [:inet6]]
   ],
-  secret_key_base: secret_key_base
+  secret_key_base: "qNUhygNa5vioTE0pQuChsCqTe5B9km4EXmXh6GRV/YH+tZ1uKmEHjc0L/n/zNz20"
 
 # ## Using releases (Elixir v1.9+)
 #
