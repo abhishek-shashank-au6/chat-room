@@ -16,12 +16,7 @@ config :chat, Chat.Repo,
   url: database_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
-secret_key_base =
-  System.get_env("SECRET_KEY_BASE") ||
-    raise """
-    environment variable SECRET_KEY_BASE is missing.
-    You can generate one by calling: mix phx.gen.secret
-    """
+secret_key_base = "qNUhygNa5vioTE0pQuChsCqTe5B9km4EXmXh6GRV/YH+tZ1uKmEHjc0L/n/zNz20"
 
 config :chat, ChatWeb.Endpoint,
   http: [
